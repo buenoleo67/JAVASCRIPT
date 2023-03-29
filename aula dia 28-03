@@ -9,13 +9,24 @@
 <body>
     <div>
         <div>
+            <nav>
+                <a href="#section1">Primeiro javaScript</a>
+                <a href="#section2">Usando innerHTML</a>
+                <a href="#section3">Editando uma imagem</a>
+                <a href="#section4">Editando estilo com javaScript</a>
+                <a href="#section5">Ocultar elementos</a>
+                <a href="#section6">Janela de alerta</a>
+                <a href="#section7">Reescrevendo o HTML</a>
+            </nav>
+        </div>
+        <div id="section1">
             <h1>Primeiro Java Script</h1>
             <p>Passe o mouse sobre o botão para ver a data e a hora do sistema </p>
             <button onmouseover="document.getElementById('dh').innerHTML=Date()" 
             onmouseout="document.getElementById('dh').innerHTML='' ">Veja a hora AQUI</button>
             <p id="dh"></p>
         </div>
-        <div>
+        <div id="section2">
             <h2>Outras formas de usar innerHTML</h2>
             <p id="par1">O conteúdo desse paragrafo será copiado para  um p abaixo do botão</p>
             <button onclick="copiaParagrafo()">
@@ -23,7 +34,7 @@
             </button>
             <p id="par2"></p>
         </div>
-        <div>
+        <div id="section3">
             <h2>Editando a fonte de uma imagem</h2>
             <button onclick="ligar()">
                 Ligue a luz
@@ -34,7 +45,7 @@
                 Apague a luz
                  </button>
         </div>
-        <div>
+        <div id="section4">
             <h2>Editando estilo com java script </h2>
             <p id="pEstilo">O estilo desse paragrafo será alterado com o click do botão abaixo</p>
             <button onclick="alteraEstilo()">
@@ -42,18 +53,18 @@
             </button>
             
         </div>  
-        <div>
+        <div id="section5">
             <h2>Ocultar elementos com JS</h2>
             <label for="texto">Entrada de texto</label>
             <input id="texto" type="text">
             <button onclick="ocultar()">Ocultar a caixa de texto</button>
         </div>
-        <div>
+        <div id="section6">
             <h2>Exibindo uma janela de alerta</h2>
             <p>Ao clicar no botão veja uma janela de alerta</p>
         <button onclick="exibirJanela()">Clique para exibir uma janela</button>
             </div>
-            <div>
+            <div id="section7">
                 <h2>Reescrevendo o HTML</h2>
                 <p>A função document.write() reescreve a página</p>
                 <button onclick="recarregar()">Recarregar a página</button>
